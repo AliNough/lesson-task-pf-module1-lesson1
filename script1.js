@@ -1,12 +1,16 @@
 console.log('Hello World');
 
-let randNum = Math.random() * 100;
+let randNum = () => {
 
-
-
-if (randNum < 50){
-    console.log('is bigger');
+   const num = Math.floor (Math.random() * 100);
+    
+    console.log(num);
+    if (num < 50){
+        console.log('is less');
+    } else {
+        console.log('is bigger');
+    }
+    
 }
-else {
-    console.log('is less');
-}
+
+randNum();
